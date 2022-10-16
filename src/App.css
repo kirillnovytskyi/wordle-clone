@@ -53,8 +53,18 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  background-color: transparent;
+  outline: none;
 
   transition: .2s all;
+}
+
+.kb-key:disabled {
+  border-color: currentColor;
+}
+
+.kb-key:disabled:hover {
+  background-color: transparent;
 }
 
 .kb-key.extended {
@@ -70,4 +80,26 @@
   font-weight: 500;
   text-align: center;
   /* color: red; */
+}
+
+.message-list {
+  position: absolute;
+  height: 100vh;
+  width: 300px;
+  left: 0;
+  top: 0;
+  padding: 15px 0 25px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.message {
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+  padding: 15px 15px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 15px;
 }
